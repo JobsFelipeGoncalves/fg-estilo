@@ -1,0 +1,548 @@
+/***
+*
+* FG Estilo v1.0 - 
+* Comandos básicos de CSS em português para facilitar na programção. Pode ser utilizado com Frameworks sem conflitos de códigos.
+* Todos os direitos reservados à Felipe Gonçalves
+*
+***/
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  :root{
+    --fonte-principal: 'Montserrat', sans-serif !important;
+
+    --cor-princ: #2e4765 !important; /* utilize para cores padrão do site desenvolvido */
+    --cor-sec: #2d99d2 !important; /* utilize para cores padrão do site desenvolvido */
+    --cor-ter: #8ed3f7 !important; /* utilize para cores padrão do site desenvolvido */
+    --cor-qua: #e7f2ff !important; /* utilize para cores padrão do site desenvolvido */
+
+    --sem-cor: transparent !important;
+    --cor-azul: #0d6efd;
+    --cor-azul-escuro: #00375f;
+    --cor-roxo: #6f42c1;
+    --cor-rosa: #d63384;
+    --cor-vermelho: #dc3545;
+    --cor-laranja: #fd7e14;
+    --cor-amarelo: #ffc107;
+    --cor-amarelo-escuro: #ba8d00;
+    --cor-verde: #198754;
+    --cor-verde-azulado: #20c997;
+    --cor-ciano: #0dcaf0;
+    --cor-branco: #fff;
+    --cor-cinza: #6c757d;
+    --cor-cinza-escuro: #343a40;
+    --cor-cinza-100: #f8f9fa;
+    --cor-cinza-200: #e9ecef;
+    --cor-cinza-300: #dee2e6;
+    --cor-cinza-400: #ced4da;
+    --cor-cinza-500: #adb5bd;
+    --cor-cinza-600: #6c757d;
+    --cor-cinza-700: #495057;
+    --cor-cinza-800: #343a40;
+    --cor-cinza-900: #212529;
+    --cor-preto: #202020; /* cor preto não é totalmente preto */;
+
+    --f-10: 10px !important;
+    --f-12: 12px !important;
+    --f-14: 14px !important;
+    --f-16: 16px !important;
+    --f-18: 18px !important;
+    --f-20: 20px !important;
+    --f-24: 24px !important;
+    --f-26: 26px !important;
+    --f-28: 28px !important;
+    --f-30: 30px !important;
+    --f-32: 32px !important;
+    --f-34: 34px !important;
+    --f-36: 36px !important;
+    --f-38: 38px !important;
+    --f-40: 40px !important;
+    --f-42: 42px !important;
+    --f-44: 44px !important;
+    --f-46: 46px !important;
+    --f-48: 48px !important;
+    --f-50: 50px !important;  
+  }
+
+  
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body{
+    font-size: var(--f-16);
+    font-family: var(--fonte-principal) ;
+    background-color: var(--cor-cinza-200);
+    overflow-x: hidden;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s linear;
+  }
+
+  header,
+  footer,
+  section{
+    width: 100%;
+  }
+
+/***
+
+[ TAMANHOS DE FONTES ] 
+Há duas formas de utilizar os prefixos das fontes. 
+Utilize 'f-' ou 'fonte-' e em seguida o número da fonte que deseja. Ex.: 'f-24' ou 'fonte-24'.
+As fontes começam de 10 e vão até 50, contanto de 2 em 2. Ex.: f-10, f-12, f-14, f-16 ... f-50. 
+
+***/
+
+    .f-10,
+    .fonte-10{ font-size: var(--f-10) !important; }
+
+    .f-11,
+    .fonte-11{ font-size: var(--f-11) !important; }
+
+    .f-12,
+    .fonte-12{ font-size: var(--f-12) !important; }
+
+    .f-14,
+    .fonte-14{ font-size: var(--f-14) !important; }
+
+    .f-16,
+    .fonte-16{ font-size: var(--f-16) !important; }
+
+    .f-18,
+    .fonte-18{ font-size: var(--f-18) !important;  }
+
+    .f-20,
+    .fonte-20{ font-size: var(--f-20) !important;  }
+
+    .f-22,
+    .fonte-24{ font-size: var(--f-22) !important;  }
+
+    .f-24,
+    .fonte-24{ font-size: var(--f-24) !important;  }
+
+    .f-26,
+    .fonte-24{ font-size: var(--f-26) !important;  }
+
+    .f-28,
+    .fonte-24{ font-size: var(--f-28) !important;  }
+
+    .f-30,
+    .fonte-30{ font-size: var(--f-30) !important;  }
+
+    .f-32,
+    .fonte-32{ font-size: var(--f-32) !important;  }
+
+    .f-34,
+    .fonte-34{ font-size: var(--f-34) !important;  }
+
+    .f-36,
+    .fonte-36{ font-size: var(--f-36) !important;  }
+
+    .f-38,
+    .fonte-38{ font-size: var(--f-38) !important;  }
+
+    .f-40,
+    .fonte-40{ font-size: var(--f-40) !important;  }
+
+    .f-42,
+    .fonte-42{ font-size: var(--f-42) !important;  }
+
+    .f-44,
+    .fonte-44{ font-size: var(--f-44) !important;  }
+
+    .f-46,
+    .fonte-46{ font-size: var(--f-46) !important;  }
+
+    .f-48,
+    .fonte-48{ font-size: var(--f-48) !important;  }
+
+    .f-50,
+    .fonte-50{ font-size: var(--f-50) !important; }
+
+
+/***
+
+[ ALINHAMENTO DE FONTES ] 
+Utilize as classes 'esquerda', 'direita', 'centro' ou 'justificado' para alinhar o seu texto.
+Se você preferir, tambem pode utilizer o prefixo 'f-' antes do alinhamento desejado.
+  
+***/
+  
+    .esquerda,
+    .f-esquerda{ text-align: left !important; }
+
+    .direita,
+    .f-direita{ text-align: right !important; }
+
+    .centro,
+    .f-centro{ text-align: center !important; }
+
+    .justificado,
+    .f-justificado{ text-align: justify !important; }
+
+/***
+
+[ COR DOS TEXTOS ] 
+Há três formas de usar as cores com FG, use os prefuxis 'c-', 'cor-' ou até mesmo o nome da cor em portugês.
+Ex.: .c-azul, .cor-azul ou .azul.
+
+***/
+
+    .c-a{ color: var(--cor-princ) !important; } /* Cor principal */
+    .c-b{ color: var(--cor-sec) !important; } /* Cor secundária */
+    .c-c{ color: var(--cor-ter) !important; } /* Cor terciária */
+
+    .azul,
+    .cor-azul,
+    .c-azul{ color: var(--cor-azul) !important; }
+
+    .azul-escuro,
+    .cor-azul-escuro,
+    .c-azul-escuro{ color: var(--cor-azul-escuro) !important; }
+
+    .roxo,
+    .cor-roxo,
+    .c-roxo{ color: var(--cor-roxo) !important; }
+
+    .rosa,
+    .cor-rosa,
+    .c-rosa{ color: var(--cor-rosa) !important; }
+
+    .vermelho,
+    .cor-vermelho,
+    .c-vermelho{ color: var(--cor-vermelho) !important; }
+
+    .laranja,
+    .cor-laranja,
+    .c-laranja{ color: var(--cor-laranja) !important; }
+
+    .amarelo,
+    .cor-amarelo,
+    .c-amarelo{ color: var(--cor-amarelo-escuro) !important; }
+
+    .amarelo-escuro,
+    .cor-amarelo-escuro,
+    .c-amarelo-escuro{ color: var(--cor-amarelo-escuro) !important; }
+
+    .verde,
+    .cor-verde,
+    .c-verde{ color: var(--cor-verde) !important; }
+
+    .verde-azulado,
+    .cor-verde-azulado,
+    .c-verde-azulado{ color: var(--cor-verde-azulado) !important; }
+
+    .branco,
+    .cor-branco,
+    .c-branco{ color: var(--cor-branco) !important; }
+
+    .cinza,
+    .cor-cinza,
+    .c-cinza{ color: var(--cor-cinza) !important; }
+
+    .cinza-escuro,
+    .cor-cinza-escuro,
+    .c-cinza-escuro{ color: var(--cor-cinza-escuro) !important; }
+
+    .cinza-1,
+    .cor-cinza-1,
+    .c-cinza-1{ color: var(--cor-cinza-100) !important; }
+
+    .cinza-2,
+    .cor-cinza-2,
+    .c-cinza-2{ color: var(--cor-cinza-200) !important; }
+
+    .cinza-3,
+    .cor-cinza-3,
+    .c-cinza-3{ color: var(--cor-cinza-300) !important; }
+
+    .cinza-4,
+    .cor-cinza-4,
+    .c-cinza-4{ color: var(--cor-cinza-400) !important; }
+
+    .cinza-5,
+    .cor-cinza-5,
+    .c-cinza-5{ color: var(--cor-cinza-500) !important; }
+
+    .cinza-6,
+    .cor-cinza-6,
+    .c-cinza-6{ color: var(--cor-cinza-600) !important; }
+
+    .cinza-7,
+    .cor-cinza-7,
+    .c-cinza-7{ color: var(--cor-cinza-700) !important; }
+
+    .cinza-8,
+    .cor-cinza-8,
+    .c-cinza-8{ color: var(--cor-cinza-800) !important; }
+
+    .cinza-9,
+    .cor-cinza-9,
+    .c-cinza-9{ color: var(--cor-cinza-900) !important; }
+
+    .preto,
+    .cor-preto,
+    .c-preto{ color: var(--cor-preto) !important; }
+
+    .transparente,
+    .cor-trasnparente,
+    .c-transparente{ color: var(--sem-cor) !important; }
+  
+/***
+
+[ PESO DAS FONTES ] 
+Assim como os tamanhos das fontes, há duas formas de utilizar os prefixos de peso, 'fonte-p' ou 'f-p-' e em seguida o número 
+da fonte que deseja. 
+
+Se usar o prefixo "fonte-p-" utilize o número inteiro do peso. Ex: 'fonte-p-300'. Caso use 'f-p-', 
+utilize apenas o primeiro algarismo do número. Ex. 'f-p-3' que será o peso de 300. 
+
+O peso das fontes começam em 300 até 900. Fique atento se a fonte que você utilizar, possui as variações de peso.
+
+***/
+
+    .fonte-p-300,
+    .f-p-3{ font-weight: 300; }
+
+    .fonte-p-400,
+    .f-p-4{ font-weight: 400; }
+
+    .fonte-p-500,
+    .f-p-5{ font-weight: 500; }
+
+    .fonte-p-600,
+    .f-p-6{ font-weight: 600; }
+
+    .fonte-p-700,
+    .f-p-7{ font-weight: 700; }
+
+    .fonte-p-800,
+    .f-p-8{ font-weight: 800; }
+
+    .fonte-p-900,
+    .f-p-9{ font-weight: 900; }
+
+/***
+
+[ FORMATAÇÃO DE TEXTO ] 
+Edite seu texto utlizando negrito, sublinado entre outros comandos.
+Veja abaixo.
+
+***/
+
+    /* Estilo da fonte */
+    .normal,
+    .fonte-normal,
+    .f-normal{ font-weight: normal !important; }
+
+    .negrito,
+    .fonte-negrito,
+    .f-negrito{ font-weight: bold !important; }
+
+    .italico, .italica,
+    .fonte-italico, .fonte-italica,
+    .f-italico, .f-italica{ font-style: italic !important; }
+
+    .obliquo, .obliqua,
+    .fonte-obliquo, .fonte-obliqua,
+    .f-obliquo, .f-obliqua{ font-style: oblique !important; }
+
+    .riscado,
+    .fonte-riscado,
+    .f-riscado{ text-decoration: line-through !important; }
+
+    .sublinhado,
+    .fonte-sublinhado,
+    .f-sublinhado{ text-decoration: underline !important; }
+
+    /* Transformação */
+    .maiusculo,
+    .fonte-maiusculo,
+    .f-maiusculo{ text-transform: uppercase !important; }
+
+    .minusculo,
+    .fonte-maiusculo,
+    .f-maiusculo{ text-transform: lowercase !important; }
+
+    /* Sombra */
+    .sombra-escura
+    .fonte-sombra-escura,
+    .sombra-escura-texto{ text-shadow: 1em 0.1em 0.2em black; }
+
+    .sombra-cinza
+    .fonte-sombra-cinza,
+    .sombra-cinza-texto{ text-shadow: 0.1em 0.1em 0.2em gray; }
+
+    .sombra-branco
+    .fonte-sombra-branco,
+    .sombra-branco-texto{ text-shadow: 0.1em 0.1em 0.2em white; }
+
+
+/***
+
+[ COR FUNDO ] 
+Há duas formas de usar as cores de fundo, use os prefuxis 'f-', 'fundo-' e em seguida a cor em portugês.
+Ex.: .f-azul ou .fundo-azul. Veja abaixo as cores disponíveis.
+
+***/
+
+    /* botoes padrão do site  */
+    .f-a{ background-color: var(--cor-princ) !important; }
+
+    .f-b{ background-color: var(--cor-sec) !important; }
+
+    .f-c{ background-color: var(--cor-ter) !important; }
+
+    .f-d{ background-color: var(--cor-qua) !important; }
+
+
+    /* Cores de fundo */
+    .fundo-transparente,
+    .f-transparente{ background-color: var(--sem-cor) !important; }
+
+    .fundo-azul-escuro,
+    .f-azul-escuro{ background-color: var(--cor-azul-escuro) !important; }
+
+    .fundo-azul,
+    .f-azul{ background-color: var(--cor-azul) !important; }
+
+    .fundo-roxo,
+    .f-roxo{ background-color: var(--cor-roxo) !important; }
+
+    .fundo-rosa,
+    .f-rosa{ background-color: var(--cor-rosa) !important; }
+
+    .fundo-vermelho,
+    .f-vermelho{ background-color: var(--cor-vermelho) !important; }
+
+    .fundo-laranja,
+    .f-laranja{ background-color: var(--cor-laranja) !important; }
+
+    .fundo-amarelo-escuro,
+    .f-amarelo-escuro{ background-color: var(--cor-amarelo-escuro) !important; }
+
+    .fundo-amarelo,
+    .f-amarelo{ background-color: var(--cor-amarelo) !important; }
+
+    .fundo-verde,
+    .f-verde{ background-color: var(--cor-verde) !important; }
+
+    .fundo-verde-azulado,
+    .f-verde-azulado{ background-color: var(--cor-verde-azulado) !important; }
+
+    .fundo-ciano,
+    .f-ciano{ background-color: var(--cor-ciano) !important; }
+
+    .fundo-branco,
+    .f-branco{ background-color: var(--cor-branco) !important; }
+
+    .fundo-cinza,
+    .f-cinza{ background-color: var(--cor-cinza) !important; }
+
+    .fundo-cinza-escuro,
+    .f-cinza-escuro{ background-color: var(--cor-cinza-escuro) !important; }
+
+    .fundo-cinza-1,
+    .f-cinza-1{ background-color: var(--cor-cinza-100) !important; }
+
+    .fundo-cinza-2,
+    .f-cinza-2{ background-color: var(--cor-cinza-200) !important; }
+
+    .fundo-cinza-3,
+    .f-cinza-3{ background-color: var(--cor-cinza-300) !important; }
+
+    .fundo-cinza-4,
+    .f-cinza-4{ background-color: var(--cor-cinza-400) !important; }
+
+    .fundo-cinza-5,
+    .f-cinza-5{ background-color: var(--cor-cinza-500) !important; }
+
+    .fundo-cinza-6,
+    .f-cinza-6{ background-color: var(--cor-cinza-600) !important; }
+
+    .fundo-cinza-7,
+    .f-cinza-7{ background-color: var(--cor-cinza-700) !important; }
+
+    .fundo-cinza-8,
+    .f-cinza-8{ background-color: var(--cor-cinza-800) !important; }
+
+    .fundo-cinza-9,
+    .f-cinza-9{ background-color: var(--cor-cinza-900) !important; }
+
+    .fundo-preto,
+    .f-preto{ background-color: var(--cor-preto) !important; }
+
+
+/***
+
+[ Links ] 
+Você pode utilizar a base do botão com todas as formaçãoes simples utlizando o prefixo ".botao".
+Para utilizar cores, use os prefixos "botao botao-" ou "botao b-" e em seguida as cores.
+
+***/
+
+    .link{ text-decoration: none; color: var(--cor-azul) !important; }
+
+/***
+
+[ BOTÕES ] 
+Você pode utilizar a base do botão com todas as formaçãoes simples utlizando o prefixo ".botao".
+Para utilizar cores, use os prefixos "botao botao-" ou "botao b-" e em seguida as cores.
+
+***/
+
+    /* Botão padrão */
+    .botao{ padding: 6px 12px; font-size: var(--f-16); color: var(--cor-preto); font-weight: 400; line-height: 1.5; text-align: center; text-decoration: none; border-radius: 4px; display: inline-block; vertical-align: middle; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
+    .botao:hover{ background-color: var(--cor-cinza-200); color: var(--cor-preto); }
+
+    .botao-vermelho,
+    .b-vermelho{ background-color: #f36c79 !important; color: var(--cor-branco) !important; border-color: #f36c79 !important; padding: 12px 24px; }
+    .botao-vermelho:hover,
+    .b-vermelho:hover{ background-color: #bf2f3c !important;  border-color: #bf2f3c !important; }
+    
+    .botao-azul,
+    .b-azul{ background-color: var(--cor-azul) !important; color: var(--cor-branco) !important; border-color: var(--cor-azul) !important; }
+    .botao-azul:hover,
+    .b-azul:hover{ background-color: #0a58ca !important; border-color: #0a58ca !important;}
+ 
+    .botao-azul-escuro,
+    .b-azul-escuro{ background-color: var(--cor-azul-escuro)  !important; color: var(--cor-branco) !important; border-color: var(--cor-azul-escuro)  !important; }
+    .botao-azul-escuro:hover,
+    .b-azul-escuro:hover{ background-color: #002c4c !important; border-color: #002c4c !important; }
+    
+    .botao-roxo,
+    .b-roxo{ background-color: var(--cor-roxo)  !important; color: var(--cor-branco) !important; border-color: var(--cor-roxo)  !important; }
+    .botao-roxo:hover,
+    .b-roxo:hover{  background-color: #58349a!important; border-color: #58349a !important; }
+
+
+    /* tamanho dos botões */
+    .botao-pequeno,
+    .b-pequeno{ font-size: small; }
+
+    .botao-medio,
+    .b-medio{ font-size: large; }
+
+    .botao-grande,
+    .b-grande{ font-size: xx-large; }
+
+    .botao-total,
+    .b-total{ width: 100% !important; padding: 12px 24px; }
+
+/* =======================  [ A PARTIR DAQUI UTILIZE A FORMATAÇÃO DO SEU SITE ]   =======================  */
+
+  /* topo */
+  header{
+    background-color: var(--sem-cor);
+  }
+
